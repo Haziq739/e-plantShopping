@@ -24,21 +24,22 @@
   background-position: center;
   filter: brightness(0.8);
 }
+
 .content {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100vw;
- top: 100px;
+  top: 100px;
   backdrop-filter: blur(4px);
   background-color: rgba(0,0,0,0.5);
   gap: 20px;
 }
 
 .landing_content {
- margin-top: 430px;
-  margin-left: 100px;
+  margin-top:  370px;
+  margin-left: 180px;
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
@@ -58,24 +59,26 @@
 }
 
 .content h1 {
-  font-size: 48px;
+  font-size: 36px; /* Reduced from 48px */
   margin-bottom: 10px;
 }
 
 .content p {
-  font-size: 25px;
+  font-size: 18px; /* Reduced from 25px */
+  margin-right: 250px;
 }
 
-.divider {
-  width: 50px;
-  height: 2px;
-  background-color: #4caf50;
-  margin: 10px 0;
+
+
+
+.para {
+  margin-left: 0; /* Remove the rightward push */
+  text-align: center; /* Center the text */
 }
 
 .get-started-button {
   padding: 15px 25px;
-  font-size: 23px;
+  font-size: 18px; /* Reduced from 23px */
   border: none;
   border-radius: 5px;
   background-color: #4caf50;
@@ -113,6 +116,7 @@
 .product-list-container.visible {
   top: 0;
 }
+
 /* LandingPage.css */
 @media screen and (max-width: 768px) {
   .content {
@@ -125,7 +129,7 @@
   .landing_content {
     margin-top: 100px; /* Adjust as needed */
     margin-left: 0;
-    width: 80%; /* Adjust as needed */
+    width: 25%; /* Adjust as needed */
     text-align: center;
   }
 
